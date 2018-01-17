@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>coba</title>
+  <style type="text/css">
+    
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+        border:3px black solid;
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+
+      }
+      #head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .row {
+        margin: auto;
+        margin-bottom: 5px;
+      }
+      .angka, .operator, .num{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        margin: auto;
+        border-radius: 50px;
+      }
+      #view {
+        width: 298px;
+        height: 100px;
+        text-align: center;
+        border:1px black solid;
+        margin-bottom: 10px;
+      }
+      .angka:hover, .operator:hover, .num:hover{
+        background-color: blue;
+        color: white;
+        font-size: 20pt;
+      }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Program Calculator Sederhana</h1>
+    <div class="head">
+      <div id="view" disabled style="text-align: right; font-size: 25pt;"></div>
+      <button onclick="reset()" class="num">C</button>
+    </div>
+    <div class="row">
+      <button class="angka">7</button>
+      <button class="angka">8</button>
+      <button class="angka">9</button>
+      <button class="operator">+</button>
+    </div>
+    <div class="row">
+      <button class="angka">4</button>
+      <button class="angka">5</button>
+      <button class="angka">6</button>
+      <button class="operator">-</button>
+    </div>
+    <div class="row">
+      <button class="angka">1</button>
+      <button class="angka">2</button>
+      <button class="angka">3</button>
+      <button class="operator">*</button>
+    </div>
+    <div>
+      <button class="angka">0</button>
+      <button class="angka">.</button>
+      <button class="operator" onclick="hitung()">=</button>
+      <button class="operator">/</button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+
+</body>
+</html>
